@@ -252,7 +252,7 @@ ui->checkBox->setChecked(finished);
 
 Here is the code of editing tasks for:
 
-*	today list widget:
+*	Today list widget:
  ```javascript
   voidToDoApp::on_listWidget_itemDoubleClicked(QListWidgetItem*item)
 {
@@ -296,7 +296,7 @@ deleteitem;
 }
  ```
  
-*	pending list widget:
+*	Pending list widget:
 
  ```javascript
 voidToDoApp::on_pendingT_itemDoubleClicked(QListWidgetItem*item)
@@ -418,5 +418,8 @@ Now we will implement the functionality of our application using the MVC model :
 
 *	QStringListModel as a model : The QStringListModel class provides a model that supplies strings to views. QStringListModel is an editable model that can be used for simple cases where you need to display a number of strings in a view widget, such as a QListView or a QComboBox. The model provides all the standard functions of an editable model, representing the data in the string list as a model with one column and a number of rows equal to the number of items in the list.
 
+You will find a video that visualizes the functioning of our application.
 
+**<h2>Conclusion</h2>**
 
+In this homework we have worked with two different approaches to implement our application. The result is the same but the MVC model remains more flexible and a Faster Development Process.
