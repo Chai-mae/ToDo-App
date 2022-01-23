@@ -96,14 +96,6 @@ Here is the code:
  }
         
  ```
- 
-![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150681030-d12ba133-5c62-4156-9da7-e8057f184b41.jpeg)
-![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150681036-7ca39dc5-2d37-404a-8d97-13c4ebb57296.jpeg)
-![WhatsApp Image 2022-01-23 at 01 24 10 (2)](https://user-images.githubusercontent.com/93831197/150681039-11d73703-187c-4072-97fc-494794a14381.jpeg)
-
-
-  
-
         void ToDoApp::on_action_View_today_tasks_toggled(bool arg1)
 {
     if(arg1)
@@ -122,7 +114,12 @@ void ToDoApp::on_action_View_finished_tasks_toggled(bool arg1)
         ui->finishedT->setVisible(false);
 }
 ```
-  
+ 
+![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150681030-d12ba133-5c62-4156-9da7-e8057f184b41.jpeg)
+![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150681036-7ca39dc5-2d37-404a-8d97-13c4ebb57296.jpeg)
+![WhatsApp Image 2022-01-23 at 01 24 10 (2)](https://user-images.githubusercontent.com/93831197/150681039-11d73703-187c-4072-97fc-494794a14381.jpeg)
+
+
 **<h4>Adding a new file</h4>**
 
 Once the new button is triggered, a Message Box appears informing the user whether he wants to open a new file without saving the previous one or he wants to save before opening a new file. 
