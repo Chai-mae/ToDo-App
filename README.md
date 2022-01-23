@@ -8,13 +8,6 @@
 
    [Introduction](#Introduction)
    
-   [1-Experimenting with QHBOXLayout](#1-Experimenting-with-QHBOXLayout)
-   
-   [2-Nested Layouts](#2-Nested-Layouts)
-    
-   [3-Bug report Form](#3-Bug-report-Form)
-   
-   [4-Grid Layout](#4-Grid-Layout)
    
    [Conclusion](#Conclusion)
    
@@ -57,14 +50,17 @@ To view a specific task we use setVisible method
     
 Here is the code:
      ```javascript
-  ```
+     ```
   
 **<h4>Adding a new file</h4>**
 
-Once the new button is triggered, a Message Box appears informing the user whether he wants to open a new file without saving the previous one or he wants to save before opening a new file. Here is the code:
+Once the new button is triggered, a Message Box appears informing the user whether he wants to open a new file without saving the previous one or he wants to save before opening a new file. 
+
+Here is the code:
 
 
  ```javascript
+ 
  voidToDoApp::on_action_New_triggered()
 {
 QMessageBoxmsgBox;
@@ -93,7 +89,6 @@ default:
 break;
 }
 }
-
   ```
  
 
