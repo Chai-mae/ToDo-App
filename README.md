@@ -51,9 +51,9 @@ Here is the code :
   ```
   Actually in this method if the checkBox finished is checked the task is automatically added to the finished task ListView.But if the getters of the due date is equal to the current day the task is added to today tasks .If not it is tranfered to oending tasks.
   
-    **<h4>View today,pending or finished tasks</h4>*
-    
-    To view a specific task we use setVisible method
+**<h4>View today,pending or finished tasks</h4>**
+
+To view a specific task we use setVisible method
     
     Here is the code:
      ```javascript
