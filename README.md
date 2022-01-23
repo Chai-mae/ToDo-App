@@ -26,7 +26,7 @@
   ![Capture d’écran (811)](https://user-images.githubusercontent.com/93831197/150660043-b68bc32e-2a92-453b-8a4e-f60ed0beb9d2.png)
   
   And also a main window  where we can have a look on today ,pending   and finished tasks.
-  When you click on the button of adding a task a dialog is displayed and it is composed of the description label  where we describe our tasks then the tag where we choose betwween Life ,Work and other ,also the due date which manage the place of the three list widgets but if we click on the checkbox button (finished )it s automatically setted to the place of finished tasks 
+  When you click on the button of adding a task a dialog is displayed and it is composed of the description label  where we describe our tasks, then the tag where we choose between Life ,Work and other ,also the due date which sets the date of the task. and finally a checkbox (finished ) that determines whether the task is finished or not. 
   
 ![WhatsApp Image 2022-01-23 at 01 46 02](https://user-images.githubusercontent.com/93831197/150660275-7ef54a01-3892-4e44-8d79-6e2d8da2c795.jpeg)
 
@@ -37,9 +37,22 @@
  **<h4>Adding a task</h4>**
  
 
-To add a task to the list we  need to get the desciption ,the tag and the date the thing that is done through getters .
+To add a task to the list we  need to get the desciption ,the tag and the date the thing that is done through  the following getters :
+ ```javascript
+ QString addTaskDialog::getTask(){
+    return ui->lineEdit->text()+ " Due: "+ui->dateEdit->text() + " Tag: " +ui->comboBox->currentText();
+}
+QDate addTaskDialog::getDate(){
+    return ui->dateEdit->date();
+}
+bool addTaskDialog::get_if_is_a_FinishedTask(){
+    return ui->checkBox->isChecked();
+}
+QString addTaskDialog::getTag(){
+    return ui->comboBox->currentText();
+  ```
 
-Here is the code :
+Here is the code of the Add slot :
  ```javascript
  void ToDoApp::on_action_Add_task_triggered()
 {
@@ -64,14 +77,15 @@ Here is the code :
 }
 }
   ```
-  Actually in this method if the checkBox finished is checked the task is automatically added to the finished task ListView.But if the getters of the due date is equal to the current day the task is added to today tasks .If not it is tranfered to oending tasks.
+  Actually in this method if the checkBox finished is checked the task is automatically added to the finished task ListWidget .But if the getter of the due date is equal to the current day the task is added to today task ListWidget .If not it is tranfered to pending tasks.
   
 **<h4>View today,pending or finished tasks</h4>**
 
-To view a specific task we use setVisible method
+To view a specific task we use setVisible(bool) method
     
 Here is the code:
-     ```javascript
+
+```javascript
      void ToDoApp::on_action_View_pending_tasks_toggled(bool arg1)
 {
     if(arg1)
@@ -97,7 +111,7 @@ void ToDoApp::on_action_View_finished_tasks_toggled(bool arg1)
     else
         ui->finishedT->setVisible(false);
 }
-     ```
+```
   
 **<h4>Adding a new file</h4>**
 
