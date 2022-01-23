@@ -7,8 +7,11 @@
 **<h2>Table of contents</h2>**
 
    [Introduction](#Introduction)
-   [ItemBased Model](#ItemBased Model)
-   [MVC Model](#MVC Model)
+   
+   [ItemBased Model](#ItemBased-Model)
+   
+   [MVC Model](#MVC-Model)
+   
    [Conclusion](#Conclusion)
    
 
