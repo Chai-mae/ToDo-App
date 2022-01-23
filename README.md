@@ -488,6 +488,9 @@ Now we will implement the functionality of our application using the MVC model :
 
 You will find a video that visualizes the functioning of our application.
 
+https://user-images.githubusercontent.com/93831197/150682966-15405b5b-9be1-4900-9a08-b57e23e3625e.mp4
+
+
 **<h2>Conclusion</h2>**
 
 In this homework we have worked with two different approaches to implement our application. The result is the same but the MVC model remains more flexible and a Faster Development Process.
