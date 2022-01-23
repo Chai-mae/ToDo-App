@@ -7,8 +7,8 @@
 **<h2>Table of contents</h2>**
 
    [Introduction](#Introduction)
-   
-   
+   [ItemBased Model](#ItemBased Model)
+   [MVC Model](#MVC Model)
    [Conclusion](#Conclusion)
    
 
@@ -97,7 +97,8 @@ Here is the code:
         
  ```
  
- ![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150681030-d12ba133-5c62-4156-9da7-e8057f184b41.jpeg)
+![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150681036-7ca39dc5-2d37-404a-8d97-13c4ebb57296.jpeg)
+
  
  ```javascript
         void ToDoApp::on_action_View_today_tasks_toggled(bool arg1)
@@ -109,7 +110,7 @@ Here is the code:
 }
 }
 ```
-![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150681036-7ca39dc5-2d37-404a-8d97-13c4ebb57296.jpeg)
+ ![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150681030-d12ba133-5c62-4156-9da7-e8057f184b41.jpeg)
 
 ```javascript
 void ToDoApp::on_action_View_finished_tasks_toggled(bool arg1)
@@ -490,7 +491,7 @@ Now we will implement the functionality of our application using the MVC model :
 
 *	QStringListModel as a model : The QStringListModel class provides a model that supplies strings to views. QStringListModel is an editable model that can be used for simple cases where you need to display a number of strings in a view widget, such as a QListView or a QComboBox. The model provides all the standard functions of an editable model, representing the data in the string list as a model with one column and a number of rows equal to the number of items in the list.
 
-You will find a video that visualizes the functioning of our application.
+Here is a video that visualizes the functioning of our application.
 
 https://user-images.githubusercontent.com/93831197/150682966-15405b5b-9be1-4900-9a08-b57e23e3625e.mp4
 
@@ -498,3 +499,7 @@ https://user-images.githubusercontent.com/93831197/150682966-15405b5b-9be1-4900-
 **<h2>Conclusion</h2>**
 
 In this homework we have worked with two different approaches to implement our application. The result is the same but the MVC model remains more flexible and a Faster Development Process.
+
+**<h2>Made by:</h2>**
+<h3>Ikram Belmadani</h3>
+<h3>Biyaye Chaimae</h3>
