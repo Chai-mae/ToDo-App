@@ -30,6 +30,6 @@
   A toolBar that holda shortcut of some functionalities:
   
   And also a main window  where we can have a look on today ,pending   and finished tasks.
-  When you click on the button of adding a task a dialog is displayed and composed of the description label  where we describe our tasks then the tag where we chosose betwween Life ,Work and other ,also the due date which manage the place of the three list widgets but if we click on the checkbox button (finished )it s automatically setted to finished tasks 
+  When you click on the button of adding a task a dialog is displayed and composed of the description label  where we describe our tasks then the tag where we chosose betwween Life ,Work and other ,also the due date which manage the place of the three list widgets but if we click on the checkbox button (finished )it s automatically setted to the place of finished tasks 
  
 
