@@ -39,9 +39,25 @@
 
 ![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150660119-3011b330-1caa-4fd3-8dfd-1266fb5df81e.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150660121-045013ff-73a7-408c-98ff-08b3d77c7d6a.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10 (2)](https://user-images.githubusercontent.com/93831197/150660125-39f0fd29-fb5b-44ac-b1e0-f4e37a535772.jpeg)
 
- **<h3>ItemBased Model</h3>**
+ **<h3>Functionality</h3>**
+  **<h4>Adding a task</h4>**
+ 
 
-To add a task to the list we  need to get the desciption ,the tag and the date the thing that is done through getters .Here is the code :
+To add a task to the list we  need to get the desciption ,the tag and the date the thing that is done through getters .
+
+Here is the code :
+ ```javascript
+  ```
+  Actually in this method if the checkBox finished is checked the task is automatically added to the finished task ListView.But if the getters of the due date is equal to the current day the task is added to today tasks .If not it is tranfered to oending tasks.
+  
+    **<h4>View today,pending or finished tasks</h4>*
+    
+    To view a specific task we use setVisible method
+    
+    Here is the code:
+     ```javascript
+  ```
+  
 
  
 
