@@ -41,6 +41,28 @@ To add a task to the list we  need to get the desciption ,the tag and the date t
 
 Here is the code :
  ```javascript
+ void ToDoApp::on_action_Add_task_triggered()
+{
+
+    addTaskDialog dialog;
+    auto reply=dialog.exec();
+    if (reply==addTaskDialog::Accepted)
+    {
+        if (dialog.get_if_is_a_FinishedTask())
+        {
+
+           ui->finishedT->addItem(dialog.getTask());
+
+
+        }
+     else if (QDate::currentDate() == dialog.getDate())
+         ui->listWidget->addItem(dialog.getTask());
+     else
+         ui->pendingT->addItem(dialog.getTask());
+
+
+}
+}
   ```
   Actually in this method if the checkBox finished is checked the task is automatically added to the finished task ListView.But if the getters of the due date is equal to the current day the task is added to today tasks .If not it is tranfered to oending tasks.
   
@@ -50,6 +72,31 @@ To view a specific task we use setVisible method
     
 Here is the code:
      ```javascript
+     void ToDoApp::on_action_View_pending_tasks_toggled(bool arg1)
+{
+    if(arg1)
+        ui->pendingT->setVisible(true);
+    else
+        ui->pendingT->setVisible(false);
+        
+        
+        void ToDoApp::on_action_View_today_tasks_toggled(bool arg1)
+{
+    if(arg1)
+        ui->listWidget->setVisible(true);
+    else
+        ui->listWidget->setVisible(false);
+}
+}
+
+
+void ToDoApp::on_action_View_finished_tasks_toggled(bool arg1)
+{
+    if(arg1)
+        ui->finishedT->setVisible(true);
+    else
+        ui->finishedT->setVisible(false);
+}
      ```
   
 **<h4>Adding a new file</h4>**
