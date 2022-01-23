@@ -28,6 +28,7 @@
   And also a main window  where we can have a look on today ,pending   and finished tasks.
   When you click on the button of adding a task a dialog is displayed and it is composed of the description label  where we describe our tasks, then the tag where we choose between Life ,Work and other ,also the due date which sets the date of the task. and finally a checkbox (finished ) that determines whether the task is finished or not. 
   
+![WhatsApp Image 2022-01-23 at 01 46 02](https://user-images.githubusercontent.com/93831197/150681014-37f006f4-7ac1-4b85-a59a-efe5350654ba.jpeg)
 
 
 
@@ -95,8 +96,13 @@ Here is the code:
  }
         
  ```
-          
-  ![WhatsApp Image 2022-01-23 at 01 46 02](https://user-images.githubusercontent.com/93831197/150660275-7ef54a01-3892-4e44-8d79-6e2d8da2c795.jpeg)
+ 
+![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150681030-d12ba133-5c62-4156-9da7-e8057f184b41.jpeg)
+![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150681036-7ca39dc5-2d37-404a-8d97-13c4ebb57296.jpeg)
+![WhatsApp Image 2022-01-23 at 01 24 10 (2)](https://user-images.githubusercontent.com/93831197/150681039-11d73703-187c-4072-97fc-494794a14381.jpeg)
+
+
+  
 
         void ToDoApp::on_action_View_today_tasks_toggled(bool arg1)
 {
