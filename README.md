@@ -28,9 +28,9 @@
   And also a main window  where we can have a look on today ,pending   and finished tasks.
   When you click on the button of adding a task a dialog is displayed and it is composed of the description label  where we describe our tasks, then the tag where we choose between Life ,Work and other ,also the due date which sets the date of the task. and finally a checkbox (finished ) that determines whether the task is finished or not. 
   
-![WhatsApp Image 2022-01-23 at 01 46 02](https://user-images.githubusercontent.com/93831197/150660275-7ef54a01-3892-4e44-8d79-6e2d8da2c795.jpeg)
 
-![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150660119-3011b330-1caa-4fd3-8dfd-1266fb5df81e.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150660121-045013ff-73a7-408c-98ff-08b3d77c7d6a.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10 (2)](https://user-images.githubusercontent.com/93831197/150660125-39f0fd29-fb5b-44ac-b1e0-f4e37a535772.jpeg)
+
+
 
  **<h3>Functionality</h3>**
  
@@ -92,8 +92,12 @@ Here is the code:
         ui->pendingT->setVisible(true);
     else
         ui->pendingT->setVisible(false);
+ }
         
-        
+ ```
+          
+  ![WhatsApp Image 2022-01-23 at 01 46 02](https://user-images.githubusercontent.com/93831197/150660275-7ef54a01-3892-4e44-8d79-6e2d8da2c795.jpeg)
+
         void ToDoApp::on_action_View_today_tasks_toggled(bool arg1)
 {
     if(arg1)
