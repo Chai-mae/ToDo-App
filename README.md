@@ -28,7 +28,7 @@
   Here is a little preview:
   ![WhatsApp Image 2022-01-23 at 01 24 10 (3)](https://user-images.githubusercontent.com/93831197/150659978-00fd1e12-c87e-43f0-ac5a-46fde7901f58.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10 (4)](https://user-images.githubusercontent.com/93831197/150659981-0000ca27-d016-4752-b17b-ca96206f3f10.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10 (5)](https://user-images.githubusercontent.com/93831197/150659987-a212c232-be1d-410a-8396-9632ae63284a.jpeg)
   
-  A toolBar that holda shortcut of some functionalities:
+  A toolBar that hold a shortcut of some functionalities:
   
   ![Capture d’écran (811)](https://user-images.githubusercontent.com/93831197/150660043-b68bc32e-2a92-453b-8a4e-f60ed0beb9d2.png)
   
@@ -40,7 +40,8 @@
 ![WhatsApp Image 2022-01-23 at 01 24 10 (1)](https://user-images.githubusercontent.com/93831197/150660119-3011b330-1caa-4fd3-8dfd-1266fb5df81e.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10](https://user-images.githubusercontent.com/93831197/150660121-045013ff-73a7-408c-98ff-08b3d77c7d6a.jpeg)![WhatsApp Image 2022-01-23 at 01 24 10 (2)](https://user-images.githubusercontent.com/93831197/150660125-39f0fd29-fb5b-44ac-b1e0-f4e37a535772.jpeg)
 
  **<h3>Functionality</h3>**
-  **<h4>Adding a task</h4>**
+ 
+ **<h4>Adding a task</h4>**
  
 
 To add a task to the list we  need to get the desciption ,the tag and the date the thing that is done through getters .
