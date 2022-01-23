@@ -55,10 +55,42 @@ Here is the code :
 
 To view a specific task we use setVisible method
     
-    Here is the code:
+Here is the code:
      ```javascript
   ```
-  
+**<h4>Adding a new file</h4>**
 
+Once the new button is triggered, a Message Box appears informing the user whether he wants to open a new file without saving the previous one or he wants to save before opening a new file. Here is the code:
+ ```javascript
+ voidToDoApp::on_action_New_triggered()
+{
+QMessageBoxmsgBox;
+msgBox.setText("Opening a new file.");
+msgBox.setInformativeText("Do you want to save this file before opening a new one?");
+msgBox.setStandardButtons(QMessageBox::Yes|QMessageBox::No|QMessageBox::Cancel);
+msgBox.setDefaultButton(QMessageBox::Yes);
+intret=msgBox.exec();
+switch(ret){
+caseQMessageBox::Yes:
+on_action_Save_triggered();
+ui->listWidget->clear();
+ui->pendingT->clear();
+ui->finishedT->clear();
+break;
+caseQMessageBox::No:
+ui->listWidget->clear();
+ui->pendingT->clear();
+ui->finishedT->clear();
+break;
+caseQMessageBox::Cancel:
+
+break;
+default:
+
+break;
+}
+}
+
+  ```
  
 
